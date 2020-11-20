@@ -1,0 +1,143 @@
+svc-sqladmin@GB-PB-DBM-V01 MINGW64 /i/Mahesh/GIT_CMD (master)
+$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   1st_demo.txt
+        new file:   Myexcel_doc.xlsx
+        new file:   db.accdb
+        new file:   first.txt
+
+
+svc-sqladmin@GB-PB-DBM-V01 MINGW64 /i/Mahesh/GIT_CMD (master)
+$ git commit -m "git working directory"
+[master (root-commit) e654955] git working directory
+ 4 files changed, 360 insertions(+)
+ create mode 100644 1st_demo.txt
+ create mode 100644 Myexcel_doc.xlsx
+ create mode 100644 db.accdb
+ create mode 100644 first.txt
+
+svc-sqladmin@GB-PB-DBM-V01 MINGW64 /i/Mahesh/GIT_CMD (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+svc-sqladmin@GB-PB-DBM-V01 MINGW64 /i/Mahesh/GIT_CMD (master)
+$ touch error.log
+
+svc-sqladmin@GB-PB-DBM-V01 MINGW64 /i/Mahesh/GIT_CMD (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        error.log
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+svc-sqladmin@GB-PB-DBM-V01 MINGW64 /i/Mahesh/GIT_CMD (master)
+$ touch .gitignore
+
+svc-sqladmin@GB-PB-DBM-V01 MINGW64 /i/Mahesh/GIT_CMD (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .gitignore
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+svc-sqladmin@GB-PB-DBM-V01 MINGW64 /i/Mahesh/GIT_CMD (master)
+$ git add --a
+
+svc-sqladmin@GB-PB-DBM-V01 MINGW64 /i/Mahesh/GIT_CMD (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   .gitignore
+
+
+svc-sqladmin@GB-PB-DBM-V01 MINGW64 /i/Mahesh/GIT_CMD (master)
+$ git commit -m "Added gitignore"
+[master 7ba075f] Added gitignore
+ 1 file changed, 1 insertion(+)
+ create mode 100644 .gitignore
+
+svc-sqladmin@GB-PB-DBM-V01 MINGW64 /i/Mahesh/GIT_CMD (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+svc-sqladmin@GB-PB-DBM-V01 MINGW64 /i/Mahesh/GIT_CMD (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   .gitignore
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+svc-sqladmin@GB-PB-DBM-V01 MINGW64 /i/Mahesh/GIT_CMD (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   .gitignore
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        dir/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+svc-sqladmin@GB-PB-DBM-V01 MINGW64 /i/Mahesh/GIT_CMD (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   .gitignore
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+svc-sqladmin@GB-PB-DBM-V01 MINGW64 /i/Mahesh/GIT_CMD (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   .gitignore
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        STATIC/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+svc-sqladmin@GB-PB-DBM-V01 MINGW64 /i/Mahesh/GIT_CMD (master)
+$ git add --a
+
+svc-sqladmin@GB-PB-DBM-V01 MINGW64 /i/Mahesh/GIT_CMD (master)
+$ git commit -m "Added static files"
+[master 074cb5a] Added static files
+ 2 files changed, 3 insertions(+), 1 deletion(-)
+ create mode 100644 STATIC/TXT1.txt
+
+svc-sqladmin@GB-PB-DBM-V01 MINGW64 /i/Mahesh/GIT_CMD (master)
+$

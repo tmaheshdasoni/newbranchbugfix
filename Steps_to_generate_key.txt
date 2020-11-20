@@ -1,0 +1,39 @@
+dasonim@GB-PB-DBM-V01 MINGW64 /i/Mahesh/GIT_CMD (master)
+$  ssh-keygen -t rsa -b 4096 -C "mahesh.dasoni@gmail.com"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/dasonim/.ssh/id_rsa):
+/c/Users/dasonim/.ssh/id_rsa already exists.
+Overwrite (y/n)? y
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/dasonim/.ssh/id_rsa.
+Your public key has been saved in /c/Users/dasonim/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:WB9mRAthYRvcPOuxdQVVpv5L9Idbyql74vqI1IclXLM mahesh.dasoni@gmail.com
+The key's randomart image is:
++---[RSA 4096]----+
+|       .B*o   .o=|
+|       o.=+.   o.|
+|        o =oo .. |
+|       o =oo.+.  |
+|      . S.++E... |
+|         .o+  .o.|
+|        . o . ..=|
+|       . . o..o=o|
+|        . o+===. |
++----[SHA256]-----+
+
+dasonim@GB-PB-DBM-V01 MINGW64 /i/Mahesh/GIT_CMD (master)
+$ eval $(ssh-agent -s)
+Agent pid 11844
+
+dasonim@GB-PB-DBM-V01 MINGW64 /i/Mahesh/GIT_CMD (master)
+$ ssh-add ~/.ssh/id_rsa
+Identity added: /c/Users/dasonim/.ssh/id_rsa (/c/Users/dasonim/.ssh/id_rsa)
+
+dasonim@GB-PB-DBM-V01 MINGW64 /i/Mahesh/GIT_CMD (master)
+$ tail ~/.ssh/id_rsa.pub
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDqy7fTcJyx4MiBU6VZ0MsBOffc2FzonYYQWqL/h72iln/e4z4AnFWcdas/VItRLBfkuVdtDz0QyfNtETvhYvKUAdKS87pGh1qoQxm5hZvA27MTqNo0+mjKXiEqCssGnDUBvvBV6Jug/+MjxT9VV/7fSrwKBTWVeBPEVM6UskJWabHPtDIUzjQ2WBkDw2zZEF6htXjUYCDOuNUv1XAhJltIiLfVRf39pL6qRzE3cweJYDyajnxp649b8c+Em6DMSemlvoCjwrHSlrgA1K3mgFM0hQP4Vs9T78kCUjONXRoWsbCX/ATbb34CoPGhEMQEerHRBGl4ez6MpWAMiF1Kl1TIpe2J31jm2Rf/io/T7sHCI34KcvE/v/oeDHSVlH6Jaeydg78+fth76HQt3DazlXUE/yFEmCl1RmuuI3hC3ZkfvGRnMMQv+kcqYA60viMcj40Z6EASAuDGLwplFv9Loqw0xquSXHezNg2ndtiLPa8GI6bQ0d6mNYmMPqpA1j3XDHLY0Kv7wiHFPgLmrVsAfk42JnwbsQmKXmMYLXtz9zo1qifw+qNG4fcAnd1Or5IRTVSTGqc+qVNNAO5wpDu5/+jIKv1zEUmxICjn3hqeozp6tbsI5+jghSj3sra6gfKR7QlQmlezBcfsxDYXCQJjNNr8UruDshRRcrGIQgWzYa8YZw== mahesh.dasoni@gmail.com
+
+dasonim@GB-PB-DBM-V01 MINGW64 /i/Mahesh/GIT_CMD (master)
+$ git push -u origin master

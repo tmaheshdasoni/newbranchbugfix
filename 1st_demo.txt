@@ -1,0 +1,357 @@
+svc-sqladmin@GB-PB-DBM-V01 MINGW64 /i/Mahesh/GIT_CMD
+$ git status
+fatal: Not a git repository (or any of the parent direct                                                                                                                                      ories): .git
+
+svc-sqladmin@GB-PB-DBM-V01 MINGW64 /i/Mahesh/GIT_CMD
+$ git init
+Initialized empty Git repository in I:/Mahesh/GIT_CMD/.git/
+
+svc-sqladmin@GB-PB-DBM-V01 MINGW64 /i/Mahesh/GIT_CMD (master)
+$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Myexcel_doc.xlsx
+        db.accdb
+        first.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+svc-sqladmin@GB-PB-DBM-V01 MINGW64 /i/Mahesh/GIT_CMD (master)
+$ git add -a
+error: unknown switch `a'
+usage: git add [<options>] [--] <pathspec>...
+
+    -n, --dry-run         dry run
+    -v, --verbose         be verbose
+
+    -i, --interactive     interactive picking
+    -p, --patch           select hunks interactively
+    -e, --edit            edit current diff and apply
+    -f, --force           allow adding otherwise ignored files
+    -u, --update          update tracked files
+    -N, --intent-to-add   record only the fact that the path will be added later
+    -A, --all             add changes from all tracked and untracked files
+    --ignore-removal      ignore paths removed in the working tree (same as --no-all)
+    --refresh             don't add, only refresh the index
+    --ignore-errors       just skip files which cannot be added because of errors
+    --ignore-missing      check if - even missing - files are ignored in dry run
+    --chmod <(+/-)x>      override the executable bit of the listed files
+
+
+svc-sqladmin@GB-PB-DBM-V01 MINGW64 /i/Mahesh/GIT_CMD (master)
+$ git add --a
+
+svc-sqladmin@GB-PB-DBM-V01 MINGW64 /i/Mahesh/GIT_CMD (master)
+$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   Myexcel_doc.xlsx
+        new file:   db.accdb
+        new file:   first.txt
+
+
+svc-sqladmin@GB-PB-DBM-V01 MINGW64 /i/Mahesh/GIT_CMD (master)
+$ git commit -m "Intial commit"
+[master (root-commit) 83a890c] Intial commit
+ 3 files changed, 1 insertion(+)
+ create mode 100644 Myexcel_doc.xlsx
+ create mode 100644 db.accdb
+ create mode 100644 first.txt
+
+svc-sqladmin@GB-PB-DBM-V01 MINGW64 /i/Mahesh/GIT_CMD (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+svc-sqladmin@GB-PB-DBM-V01 MINGW64 /i/Mahesh/GIT_CMD (master)
+$ git log
+commit 83a890ce989260a7c8076257dd0e363ab7ab6f3a
+Author: Mahesh21 <mahesh.dasoni@gmail.com>
+Date:   Tue Nov 3 08:30:38 2020 +0000
+
+    Intial commit
+
+svc-sqladmin@GB-PB-DBM-V01 MINGW64 /i/Mahesh/GIT_CMD (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   first.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+svc-sqladmin@GB-PB-DBM-V01 MINGW64 /i/Mahesh/GIT_CMD (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   Myexcel_doc.xlsx
+        modified:   first.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+svc-sqladmin@GB-PB-DBM-V01 MINGW64 /i/Mahesh/GIT_CMD (master)
+$ git add first.txt
+
+svc-sqladmin@GB-PB-DBM-V01 MINGW64 /i/Mahesh/GIT_CMD (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   first.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   Myexcel_doc.xlsx
+
+
+svc-sqladmin@GB-PB-DBM-V01 MINGW64 /i/Mahesh/GIT_CMD (master)
+$ git commit -m "Changed firts.txt and added better design"
+[master 3b033f2] Changed firts.txt and added better design
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+svc-sqladmin@GB-PB-DBM-V01 MINGW64 /i/Mahesh/GIT_CMD (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   Myexcel_doc.xlsx
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+svc-sqladmin@GB-PB-DBM-V01 MINGW64 /i/Mahesh/GIT_CMD (master)
+$ git commit -m "Changed excel file"
+On branch master
+Changes not staged for commit:
+        modified:   Myexcel_doc.xlsx
+
+no changes added to commit
+
+svc-sqladmin@GB-PB-DBM-V01 MINGW64 /i/Mahesh/GIT_CMD (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   Myexcel_doc.xlsx
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+svc-sqladmin@GB-PB-DBM-V01 MINGW64 /i/Mahesh/GIT_CMD (master)
+$ git add --a
+
+svc-sqladmin@GB-PB-DBM-V01 MINGW64 /i/Mahesh/GIT_CMD (master)
+$ git commit -m "Changed excel file"
+[master 36e6849] Changed excel file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rewrite Myexcel_doc.xlsx (99%)
+
+svc-sqladmin@GB-PB-DBM-V01 MINGW64 /i/Mahesh/GIT_CMD (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+svc-sqladmin@GB-PB-DBM-V01 MINGW64 /i/Mahesh/GIT_CMD (master)
+$ git log
+commit 36e684945c3e81b445a74c182be73e7446c93d69
+Author: Mahesh21 <mahesh.dasoni@gmail.com>
+Date:   Tue Nov 3 08:40:15 2020 +0000
+
+    Changed excel file
+
+commit 3b033f26aa9f8bf4a13fe5198a91c94203100521
+Author: Mahesh21 <mahesh.dasoni@gmail.com>
+Date:   Tue Nov 3 08:34:21 2020 +0000
+
+    Changed firts.txt and added better design
+
+commit 83a890ce989260a7c8076257dd0e363ab7ab6f3a
+Author: Mahesh21 <mahesh.dasoni@gmail.com>
+Date:   Tue Nov 3 08:30:38 2020 +0000
+
+    Intial commit
+
+svc-sqladmin@GB-PB-DBM-V01 MINGW64 /i/Mahesh/GIT_CMD (master)
+$ rm -rf .git
+
+svc-sqladmin@GB-PB-DBM-V01 MINGW64 /i/Mahesh/GIT_CMD
+$ git status
+fatal: Not a git repository (or any of the parent directories): .git
+
+svc-sqladmin@GB-PB-DBM-V01 MINGW64 /i/Mahesh/GIT_CMD
+$ git clone rm -rf .git
+error: unknown switch `r'
+usage: git clone [<options>] [--] <repo> [<dir>]
+
+    -v, --verbose         be more verbose
+    -q, --quiet           be more quiet
+    --progress            force progress reporting
+    -n, --no-checkout     don't create a checkout
+    --bare                create a bare repository
+    --mirror              create a mirror repository (implies bare)
+    -l, --local           to clone from a local repository
+    --no-hardlinks        don't use local hardlinks, always copy
+    -s, --shared          setup as shared repository
+    --recursive           initialize submodules in the clone
+    --recurse-submodules  initialize submodules in the clone
+    -j, --jobs <n>        number of submodules cloned in parallel
+    --template <template-directory>
+                          directory from which templates will be used
+    --reference <repo>    reference repository
+    --dissociate          use --reference only while cloning
+    -o, --origin <name>   use <name> instead of 'origin' to track upstream
+    -b, --branch <branch>
+                          checkout <branch> instead of the remote's HEAD
+    -u, --upload-pack <path>
+                          path to git-upload-pack on the remote
+    --depth <depth>       create a shallow clone of that depth
+    --single-branch       clone only one branch, HEAD or --branch
+    --shallow-submodules  any cloned submodules will be shallow
+    --separate-git-dir <gitdir>
+                          separate git dir from working tree
+    -c, --config <key=value>
+                          set config inside the new repository
+    -4, --ipv4            use IPv4 addresses only
+    -6, --ipv6            use IPv6 addresses only
+
+
+svc-sqladmin@GB-PB-DBM-V01 MINGW64 /i/Mahesh/GIT_CMD
+$ git clone https://github.com/tensorflow/tensorflow.git
+Cloning into 'tensorflow'...
+remote: Enumerating objects: 45, done.
+remote: Counting objects: 100% (45/45), done.
+remote: Compressing objects: 100% (36/36), done.
+remote: Total 1029879 (delta 6), reused 19 (delta 3), pack-reused 1029834
+Receiving objects: 100% (1029879/1029879), 614.17 MiB | 13.63 MiB/s, done.
+Resolving deltas: 100% (839848/839848), done.
+Checking out files: 100% (23676/23676), done.
+
+svc-sqladmin@GB-PB-DBM-V01 MINGW64 /i/Mahesh/GIT_CMD
+$ ls
+db.accdb  first.txt  Myexcel_doc.xlsx  tensorflow/
+c
+svc-sqladmin@GB-PB-DBM-V01 MINGW64 /i/Mahesh/GIT_CMD
+$ cd tensorflow/
+
+svc-sqladmin@GB-PB-DBM-V01 MINGW64 /i/Mahesh/GIT_CMD/tensorflow (master)
+$ ls
+ACKNOWLEDGMENTS     AUTHORS  CODE_OF_CONDUCT.md  configure*     configure.py     ISSUE_TEMPLATE.md  LICENSE       README.md   SECURITY.md  third_party/  WORKSPACE
+arm_compiler.BUILD  BUILD    CODEOWNERS          configure.cmd  CONTRIBUTING.md  ISSUES.md          models.BUILD  RELEASE.md  tensorflow/  tools/
+
+svc-sqladmin@GB-PB-DBM-V01 MINGW64 /i/Mahesh/GIT_CMD/tensorflow (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working tree clean
+
+svc-sqladmin@GB-PB-DBM-V01 MINGW64 /i/Mahesh/GIT_CMD/tensorflow (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+git
+svc-sqladmin@GB-PB-DBM-V01 MINGW64 /i/Mahesh/GIT_CMD/tensorflow (master)
+$ git add --a
+
+svc-sqladmin@GB-PB-DBM-V01 MINGW64 /i/Mahesh/GIT_CMD/tensorflow (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   README.md
+
+
+svc-sqladmin@GB-PB-DBM-V01 MINGW64 /i/Mahesh/GIT_CMD/tensorflow (master)
+$ git commit -m "chnaged readme.md file"
+[master 8e9a861] chnaged readme.md file
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+svc-sqladmin@GB-PB-DBM-V01 MINGW64 /i/Mahesh/GIT_CMD/tensorflow (master)
+$ git log
+commit 8e9a8619df2a82621b3b975069ac69fad20ab9dd
+Author: Mahesh21 <mahesh.dasoni@gmail.com>
+Date:   Wed Nov 4 08:51:27 2020 +0000
+
+    chnaged readme.md file
+
+commit 3809676e5f1265cfba68be31599f84658da007a8
+Author: Sanjoy Das <sanjoy@google.com>
+Date:   Tue Nov 3 23:44:39 2020 -0800
+
+    Remove tf_cc_test{s}_gpu
+
+    Replace remaining instance with tf_cuda_cc_test
+
+    PiperOrigin-RevId: 340594155
+    Change-Id: I6b8a5d2e676e215f5d4a523590bf5a487247595d
+
+commit d895da1ac40dc82317c24bffc3bd3f6c46de5b3f
+Author: Thai Nguyen <thaink@google.com>
+Date:   Tue Nov 3 22:19:20 2020 -0800
+
+    Fix BroadcastTo logic to handle 8D non-broadcasting case
+
+    The error happen with 8D inputs when non-broadcasting is requested
+
+    PiperOrigin-RevId: 340586767
+    Change-Id: I108d54fe40291705c7230206fa955853ad831c30
+
+commit d77d8b3f4ac68e82664fa8d183f035d903b75295
+Author: Chao Mei <chaomei@google.com>
+Date:   Tue Nov 3 22:19:10 2020 -0800
+
+    Deprecate the modifyGraphWithDelegate method in Java binding. The Options.addDelegate(...) is preferred to provide delegates at creation time.
+
+    PiperOrigin-RevId: 340586749
+    Change-Id: Ib7af63469165253206e906379c47a56f46445190
+
+commit f65f285b443acbcb926106054c9a85aa374ec7ad
+Author: Scott Zhu <scottzhu@google.com>
+Date:   Tue Nov 3 21:30:37 2020 -0800
+
+    Update KPL benchmark for redundant absl flag import.
+
+    Also update the build deps to populate explicit dependency.
+
+    PiperOrigin-RevId: 340581042
+    Change-Id: I684b24d752c33bccc677da6b2534a4bc9ccfe1e0
+
+commit 247746808e39c9507b4c28599992393dbe421fe7
+Author: Jaesung Chung <jaesung@google.com>
+Date:   Tue Nov 3 20:40:50 2020 -0800
+
+    Add new pattern matching rules for TFL Broadcastable ops, which have high dimenion inputs.
+
+    - Low dimensions <= 4, for example, should avoid adding BroadcastTo op as usual, which means we need to lower broadcast-able ops as before without BroadcastTo op and lower the BroadcastTo op to the hardware accelerator supported ops as well.
+
+    - This explicit BroadcastTo op needs to be inserted only when a higher dimension is needed, which will unlock the new opportunity.
+
+svc-sqladmin@GB-PB-DBM-V01 MINGW64 /i/Mahesh/GIT_CMD/tensorflow (master)

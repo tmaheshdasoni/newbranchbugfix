@@ -1,0 +1,5 @@
+This is version 1 of project
+I want this file to go into commit
+CHANGED BY MAHESH new
+
+This is from master
